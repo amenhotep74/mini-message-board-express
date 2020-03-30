@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+{{!-- Looping through messages array --}}
+<div class="messages">
+    {{#each messages}}
+    <p>User: {{this.user}}</p>
+    <p>Message: {{this.text}} Date: {{this.added}}</p>
+    {{/each}}
+</div>
+{{> form}}
